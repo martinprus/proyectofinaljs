@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <script src="../librerias/sweetalert.js"></script>
+    <title>Simulador operatoria con criptomonedas</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo" class="h1 text-center">Bienvenido a criptolandia</h1>
+    </div>
+
+    <div class="container text-center py-5 align-items-center">
+      <form class="">
+        <h2 class="h2 mb-5 animate__animated animate__bounce">
+          Ingresá a nuestra plataforma
+        </h2>
+        <label for="email" class="form-label mx-3"
+          ><strong>Correo electronico</strong></label
+        >
+        <input
+          name="email"
+          type="email"
+          id="correo"
+          class="form-control-m"
+          placeholder=""
+          required="true"
+          autofocus=""
+        /><br />
+        <label for="password" class="form-label mx-3"
+          ><strong>Contraseña</strong></label
+        >
+        <input
+          name="password"
+          type="password"
+          id="contraseña"
+          class="form-control-m"
+          placeholder=""
+          required="true"
+        /><br />
+        <button class="btn btn-m m-3 btn-dark btn-" id="login">Login</button>
+      </form>
+      <p>¿No tenes cuenta? <a href="crearCuenta.html">Crea tu cuenta aquí!</a></p>
+    </div>
+  </body>
+  <script src="../js/jsLogin.js"></script>
+</html>

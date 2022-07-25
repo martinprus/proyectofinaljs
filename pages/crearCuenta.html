@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="../librerias/sweetalert.js"></script>
+
+    <title>Simulador operatoria con criptomonedas</title>
+  </head>
+  <body class = "container">
+    <div>
+      <h1 id="titulo" class ="text-center">Cree su usuario en criptolandia</h1>
+      <p id="fecha"></p>
+    </div>
+    <div>
+
+      <div class="container text-center py-5 align-items-start">
+        <form class="">
+          <h2 class="h2 mb-5 animate__animated animate__bounce">
+            Ingresá a nuestra plataforma
+          </h2>
+          <label for="nombre" class="form-label mx-3"
+          ><strong>Nombre completo</strong></label
+        >
+        <input
+          type="text"
+          id="nombre"
+          class="form-control-m"
+          placeholder=""
+          required="true"
+          autofocus=""
+        /><br />
+          <label for="email" class="form-label mx-3"
+            ><strong>Correo electronico</strong></label
+          >
+          <input
+            name="email"
+            type="email"
+            id="correo"
+            class="form-control-m"
+            placeholder=""
+            required="true"
+            autofocus=""
+          /><br />
+          <label for="inputPassword" class="form-label mx-3"
+            ><strong>Contraseña</strong></label
+          >
+          <input
+            type="password"
+            id="contraseña"
+            class="form-control-m"
+            placeholder=""
+            required="true"
+          /><br />
+          <label for="inputPassword" class="form-label mx-3"
+          ><strong>Repita su contraseña</strong></label
+        >
+        <input
+          type="password"
+          id="repetirContraseña"
+          class="form-control-m"
+          placeholder=""
+          required="true"
+        /><br />
+          <button class="btn btn-m m-3 btn-dark btn-" id="submit">Crear usuario</button>
+        </form>
+        <p>¿Ya tenes cuenta?? <a href="../pages/login.html">Logueate!</a></p>
+      <script src="../js/crearCuenta.js"></script>
+    </div>
+  </body>
+</html>
