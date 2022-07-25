@@ -40,12 +40,7 @@ function loguearUsuario() {
       footer: '<a href="../pages/crearCuenta.html"><b>CREAR UN USUARIO</b></a>',
     });
   } else if (usuario.contraseña === contraseña.value) {
-    localStorage.setItem("usuarioLogueado", usuario.nombre);
-    Swal.fire({
-      icon: "success",
-      title: "Login exitoso!",
-      footer: '<a href="main.html"><b>Continuar al sitio</b></a>',
-    });
+    window.location.replace("main.html");
   } else {
     Swal.fire({
       icon: "error",

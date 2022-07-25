@@ -72,7 +72,7 @@ function comprarCripto() {
   activo = ticker.value.toUpperCase();
   cantidad = parseFloat(cantidadCripto.value);
   indice = buscarIndex(activo);
-  if (indice != -1 && cantidad * cartera[indice].precio < cartera[0].cantidad) {
+  if (indice != -1 && cantidad * cartera[indice].precio < cartera[0].cantidad && cantidad > 0) {
     let ahora = DateTime.now();
     let registro = `Horario operacion: ${ahora.hour}:${ahora.minute}:${
       ahora.second
@@ -116,7 +116,7 @@ function venderCripto() {
   activo = ticker.value.toUpperCase();
   cantidad = parseFloat(cantidadCripto.value) * -1;
   indice = buscarIndex(activo);
-  if (indice != -1 && cartera[indice].cantidad + cantidad >= 0) {
+  if (indice != -1 && cartera[indice].cantidad + cantidad >= 0 && cantidad < 0) {
     let ahora = DateTime.now();
     let registro = `Horario operacion: ${ahora.hour}:${ahora.minute}:${
       ahora.second
@@ -308,7 +308,7 @@ function clickLogOut() {
           title: "Hasta luego!",
           text: "Su sesión ha sido cerrada.",
           icon: "success",
-          footer: '<a href="..index.html">Volver al inicio</a>',
+          footer: '<a href="../index.html">Volver al inicio</a>',
         });
         localStorage.setItem("usuarioLogueado", "");
       } else if (result.dismiss === Swal.DismissReason.cancel) {

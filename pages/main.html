@@ -80,7 +80,11 @@
         <label for="ticker" class="form-label"
           >Ingrese el ticker a operar:
         </label>
-        <input type="text" name="ticker" id="ticker" /><br />
+        <input type="text" list="tickers" name="ticker" id="ticker" /><br />
+        <datalist id="tickers">
+          <option value="BTC">Bitcoin</option>
+          <option value="ETH">Ethereum</option>
+        </datalist>
         <label for="cantidad" class="form-label">Ingrese la cantidad: </label>
         <input type="number" name="cantidad" id="cantidadCripto" /><br />
         <label for="operacion" class="form-label"
