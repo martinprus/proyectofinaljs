@@ -308,7 +308,7 @@ function clickLogOut() {
           title: "Hasta luego!",
           text: "Su sesión ha sido cerrada.",
           icon: "success",
-          footer: '<a href="pages/home.html">Volver al inicio</a>',
+          footer: '<a href="..index.html">Volver al inicio</a>',
         });
         localStorage.setItem("usuarioLogueado", "");
       } else if (result.dismiss === Swal.DismissReason.cancel) {

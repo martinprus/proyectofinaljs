@@ -44,7 +44,7 @@ function loguearUsuario() {
     Swal.fire({
       icon: "success",
       title: "Login exitoso!",
-      footer: '<a href="index.html"><b>Continuar al sitio</b></a>',
+      footer: '<a href="main.html"><b>Continuar al sitio</b></a>',
     });
   } else {
     Swal.fire({
